@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/contact/webcamphoto/view</path>
+    <page_callback>CRM_Webcamphoto_Page_View</page_callback>
+    <title>WebcamPhoto</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/contact/webcamphoto/save</path>
+    <page_callback>CRM_Webcamphoto_Page_Save</page_callback>
+    <title>WebcamPhoto</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>

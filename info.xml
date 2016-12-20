@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<extension key="com.jasontdc.webcamphoto" type="module">
+  <file>webcamphoto</file>
+  <name>Webcam Photo</name>
+  <description>The Webcam Photo extension allows you to update your CiviCRM contact photos using your webcam.</description>
+  <license>MIT</license>
+  <maintainer>
+    <author>Jason Davies</author>
+    <email>jasontdc@gmail.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/jasontdc/com.jasontdc.webcamphoto</url>
+    <url desc="Documentation">https://github.com/jasontdc/com.jasontdc.webcamphoto</url>
+    <url desc="Support">https://github.com/jasontdc/com.jasontdc.webcamphoto</url>
+    <url desc="Licensing">https://opensource.org/licenses/MIT</url>
+  </urls>
+  <releaseDate>2016-12-19</releaseDate>
+  <version>0.1</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.2</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <civix>
+    <namespace>CRM/Webcamphoto</namespace>
+  </civix>
+</extension>
