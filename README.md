@@ -1,4 +1,4 @@
-# com.jasontdc.secondlastname
-A CiviCRM extension that adds a Second Last Name field to basic contact information for Individuals.
+# com.jasontdc.webcamphoto
+A CiviCRM extension that allows you to add contact photos using your webcam.
 
 Uses Joseph Huckaby's excellent WebcamJS library: https://github.com/jhuckaby/webcamjs
