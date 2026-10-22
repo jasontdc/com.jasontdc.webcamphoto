@@ -10,5 +10,5 @@
 
 <div><img src="{$imgsrc}"></div>
 
-{crmScript ext=com.jasontdc.webcamphoto file=webcamjs/webcam.js}
+{crmScript url="//cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.22/webcam.min.js" }
 {crmScript ext=com.jasontdc.webcamphoto file=webcamphoto.js}
