@@ -11,7 +11,8 @@ function webcamphoto_civicrm_tabset($tabsetName, &$tabs, $context) {
         "snippet=json&reset=1&cid=$contactId" );
 
       //add a new Photo tab along with url
-      $tabs[] = array(
+      $tabs['webcamphoto'] = array(
+        'id' => 'webcamphoto',
         'title' => ts('Photo'),
         'url' => $url,
         'valid' => 1,
