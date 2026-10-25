@@ -59,12 +59,12 @@ cj(function() {
     
 		Webcam.set({
 			// live preview size
-			width: 640,
-			height: 480,
+			width: 1280,
+			height: 720,
 			
 			// device capture size
-			dest_width: 640,
-			dest_height: 480,
+			dest_width: 1280,
+			dest_height: 720,
 			
 			// final cropped size
 			crop_width: 480,
