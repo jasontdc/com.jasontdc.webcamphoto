@@ -30,5 +30,24 @@
 	</div>
 </div>
 
+<script>
+  (function() {
+    var originalCreateObjectURL = URL.createObjectURL;
+    URL.createObjectURL = function(obj) {
+      // If webcam.min.js passes a stream, grab the video element and assign it properly
+      if (obj instanceof MediaStream) {
+        setTimeout(function() {
+          var video = document.querySelector('video');
+          if (video && !video.srcObject) {
+            video.srcObject = obj;
+          }
+        }, 1);
+        return '';
+      }
+      return originalCreateObjectURL.call(URL, obj);
+    };
+  })();
+</script>
+
 {crmScript url="//cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.22/webcam.min.js" }
 {crmScript ext="com.jasontdc.webcamphoto" file="webcamphoto.js"}
