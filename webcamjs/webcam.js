@@ -320,7 +320,11 @@ var Webcam = {
 				}
 				else {
 				  	// using URL.createObjectURL() as fallback for old browsers
-				  	video.src = window.URL.createObjectURL(stream);
+					if ('srcObject' in video) {
+						video.srcObject = stream;
+					} else {
+						video.src = URL.createObjectURL(stream); // Fallback for ancient browsers
+					}
 				}
 			})
 			.catch( function(err) {
